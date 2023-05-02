@@ -12,24 +12,24 @@
   <body>
     <div class="container">
       <h2>Día laborable o fin de semana</h2>
-      <form action="" method="post">
+      <form>
         <div >
             <div class="row">
-                <div class="col-md-3 mt-2">
+                <div class="col-md-4 mt-2">
                     <label for="dia">Día:</label>
-                    <input type="number"  id="dia" placeholder="Ingrese el día"  min="1" max="31" required >
+                    <input type="number"  id="dia" placeholder="Ingrese el día 1 al 31"  min="1" max="31"  style="width:170px" >
                 </div>
-                <div class="col-md-3 mt-2">
+                <div class="col-md-4 mt-2">
                   <label for="mes">Mes:</label>
-                  <input type="number"  id="mes" placeholder="Ingrese el mes" min="1" max="12" required>
+                  <input type="number"  id="mes" placeholder="Ingrese el mes 1 al 12" min="1" max="12" style="width:175px" >
                 </div>
-                <div class="col-md-6 mt-2">
+                <div class="col-md-4 mt-2">
                   <label for="anio">Año:</label>
-                  <input type="number" id="anio" placeholder="Ingrese el año" required>
+                  <input type="number" id="anio" placeholder="Ingrese el año" style="width:150px" >
                 </div>
-            </div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary mt-2" onclick="calcularDia()">Calcular</button>
+        <button type="button" class="btn btn-primary mt-2" onclick="calcularDia()">Calcular</button>
       </form>
       <br>
       <div id="resultado"></div>

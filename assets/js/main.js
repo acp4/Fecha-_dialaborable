@@ -11,10 +11,10 @@ function calcularDia() {
         5: `Viernes`,
         6: `Sabado`,
     }
-    if (!dia || !mes || !anio) {
-        alert("Ingrese todos los datos");
-        return;
-    } 
+        if(!dia || !mes || !anio){
+            alert("Ingresa todos los datos");
+            document.getElementById("resultado").innerHTML = " ";
+        }else{
         let fecha = new Date(anio, mes - 1, dia);
         let diaSemana = fecha.getDay();
         let mensaje = "";
@@ -37,6 +37,7 @@ function calcularDia() {
             }
         }
         document.getElementById("resultado").innerHTML = mensaje;
+    }
 }
 
 
